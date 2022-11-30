@@ -1,0 +1,4 @@
+@use "sass:color";:root{--intro-background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%,
+             rgba(0,0,0,0.65) 100%),url(assets/img/flowers.jpg) no-repeat center center scroll;--intro-background-position: center center;--text-color: #404040;--text-color-lighter: #c6c6c6;--primary-color: #d98560;--primary-color-darker: #d37247;--primary-color-darkest: #b1532a;--primary-text-color: #000;--primary-text-color-darker: #000;--primary-text-color-darkest: #fff;--secondary-color: #afa63d;--secondary-color-darker: #e6e6e6;--secondary-color-darkest: #b3b3b3;--secondary-text-color: #fff;--secondary-text-color-darker: #000;--secondary-text-color-darkest: #000;--accent-color: #219ab3;--accent-color-darker: #e6e6e6;--accent-color-darkest: #b3b3b3;--accent-text-color: #fff;--accent-text-color-darker: #000;--accent-text-color-darkest: #000;--background-color: #fff;--background-color-lighter: #fff}
+
+/*# sourceMappingURL=styles.css.map */
