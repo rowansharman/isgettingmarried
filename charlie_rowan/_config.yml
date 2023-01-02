@@ -1,5 +1,7 @@
 # Site settings
-theme: jekyll-theme-easy-wedding
+host: 0.0.0.0
+livereload: 1
+# theme: jekyll-theme-easy-wedding
 title: Charlie & Rowan
 email: rowansharman1@gmail.com
 url: https://charlie.isgettingmarried.to/rowan # Be sure to include http:// or https://
@@ -14,15 +16,15 @@ collections:
 sass:
   style: compressed
 
-defaults:
-  - scope:
-      path: "photos/"
-    values:
-      image: true
-  - scope:
-      type: banners
-    values:
-      layout: banner
+# defaults:
+#   - scope:
+#       path: "photos/"
+#     values:
+#       image: true
+#   - scope:
+#       type: banners
+#     values:
+#       layout: banner
 
 # Build settings
 markdown: kramdown

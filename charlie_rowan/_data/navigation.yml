@@ -2,8 +2,8 @@
   link: /
 - name: Itinerary
   link: /itinerary
-- name: Details
-  link: /details
+- name: Travel
+  link: /travel
 - name: FAQ
   link: /faq
 - name: Registry
@@ -11,4 +11,4 @@
 - name: Photos
   link: /photo-gallery
 - name: RSVP
-  modal_id: rsvp-modal
+  exlink: https://docs.google.com/forms/d/e/1FAIpQLSeuENV558XziqRGe3kwu2skPmVktbH4sEZgMrd2qaDN_JEukQ/viewform?usp=sf_link
