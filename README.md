@@ -16,3 +16,8 @@ To start a local server: `jekyll serve`
     ./script/deploy.sh
 
 https://content.nathanorick.com/weddings/sample/
+
+# Editing pages/how it's laid out
+## Pages
+
+## Color scheme
