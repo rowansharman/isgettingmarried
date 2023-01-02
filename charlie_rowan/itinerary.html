@@ -1,10 +1,101 @@
 ---
-layout: info
+layout: page
 title: Itinerary
 billboard_image: assets/img/sparklers.jpg
 image_position: center center
-include: itinerary.html
+<!-- include: itinerary.html -->
 ---
-{% if page.include %}
-  {% include {{ page.include }} %}
-{% endif %}
+
+<center><b><p>Gustavus is pretty small and has relatively few ammenities. It can be hard to get around without a car, it's uncertain whether/how many restaurants will be open, and there are a limited number of ways to even get there. With that in mind, we have come up with a kind of template itinerary for most folks, have a local caterer hired to feed people for the weekend, and have reserved the Gustavus Community Center (GCC). IMPORTANT NOTE: GCC doesn't like outdoor shoes in the building, so please bring a pair of comfortable indoor shoes (unless you're comfortable spending a lot of time on concrete in socks).</p>
+<p>Here's how we envision the weekend!</p></b></center>
+
+<section class="container content-section">
+  <!-- Alternate/notfluctuating justification: -->
+  <!-- <div class="row justify-content-center"></div> -->
+  <div class="row {% cycle 'justify-content-start', 'justify-content-end' %}">
+
+    <div class="col-lg-7 col-sm-8">
+      <h2>
+        Friday, June 16, 2023
+        <br>
+        <small class="text-muted wrap-whitespace date-subheader">
+        Arrival Day
+        </small>
+      </h2>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- <address class="col-xs-8 ">
+          <strong>LOCATION</strong><br>
+        </address> -->
+
+        <dl class="col-xs-4">
+          <dt>Attire</dt>
+          <dd>Whatever you're wearing</dd>
+        </dl>
+
+      </div>
+
+      <p>Most guests arrive in Gustavus on Alaska Airlines 157, around 5 PM. They'll get to their lodging and from there go to the GCC (transportation TBD) for dinner. Pick up a sack breakfast for tomorrow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container content-section">
+  <div class="row {% cycle 'justify-content-start', 'justify-content-end' %}">
+
+    <div class="col-lg-7 col-sm-8">
+      <h2>
+        Saturday, June 17th, 2023
+        <br>
+        <small class="text-muted wrap-whitespace date-subheader">
+        Tour (or hangout) day!
+        </small>
+      </h2>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- <address class="col-xs-8 ">
+          <strong>LOCATION</strong><br>
+        </address> -->
+
+        <dl class="col-xs-4">
+          <dt>Attire</dt>
+          <dd>Layers and binoculars</dd>
+        </dl>
+
+      </div>
+
+      <p>This is your chance to see Glacier Bay! We recommend taking the Glacier Bay Lodge's tour boat. It's an all day sort of deal. They give you lunch. We'll figure out transportation to/from Bartlett Cove. No rush to book. Prepare for glaciers and puffins.</p>
+      <p>Wedding prep and sandwiches at GCC for those who aren't on the boat. Dinner at GCC for everyone.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container content-section">
+  <div class="row {% cycle 'justify-content-start', 'justify-content-end' %}">
+
+    <div class="col-lg-7 col-sm-8">
+      <h2>
+        NAME
+        <br>
+        <small class="text-muted wrap-whitespace date-subheader">
+        DATE
+        </small>
+      </h2>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <address class="col-xs-8 ">
+          <strong>LOCATION</strong><br>
+        </address>
+
+        <dl class="col-xs-4">
+          <dt>Attire</dt>
+          <dd>ATTIRE?</dd>
+        </dl>
+
+      </div>
+
+      <p>EVENT DESCRIPTION</p>
+    </div>
+  </div>
+</section>
+
