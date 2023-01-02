@@ -4,6 +4,8 @@
   link: /itinerary
 - name: Travel
   link: /travel
+- name: Things to Do
+  link: /activities
 - name: FAQ
   link: /faq
 - name: Registry
