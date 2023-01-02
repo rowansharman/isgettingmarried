@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Celebrations | Charlie & Rowan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="We're getting married and can't wait to celebrate with you!">
+    <link rel="canonical" href="http://localhost:4000/celebrations/">
+    <link rel="icon" href="/assets/img/favicon.png?v=1.0">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://localhost:4000/celebrations/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Celebrations | Charlie & Rowan">
+    <meta property="og:description" content="We're getting married and can't wait to celebrate with you!">
+    <meta property="og:image" content="http://localhost:4000/assets/img/opg.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://localhost:4000/celebrations/">
+    <meta name="twitter:title" content="Celebrations | Charlie & Rowan">
+    <meta name="twitter:description" content="We're getting married and can't wait to celebrate with you!">
+    <meta name="twitter:image" content="http://localhost:4000/assets/img/opg.jpg">
+
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Charlie &amp; Rowan" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Celebrations | Charlie &amp; Rowan</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Celebrations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We’re getting married and can’t wait to celebrate with you!" />
+<meta property="og:description" content="We’re getting married and can’t wait to celebrate with you!" />
+<link rel="canonical" href="http://localhost:4000/celebrations/" />
+<meta property="og:url" content="http://localhost:4000/celebrations/" />
+<meta property="og:site_name" content="Charlie &amp; Rowan" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Celebrations" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"We’re getting married and can’t wait to celebrate with you!","headline":"Celebrations","url":"http://localhost:4000/celebrations/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">
+    <link href='//fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Cardo:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+</head>
+
+    <body data-target=".navbar-fixed-top">
+        <!-- Javascript Imports -->
+        <script type="text/javascript" src="/assets/js/ouical.min.js"></script>
+
+        <script type="text/javascript" src="/assets/main-bundle.js"></script>
+
+        <script type="text/javascript" src="/assets/js/globals.js"></script>
+
+
+        
+
+
+<div class="modal fade" id="rsvp-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+<form id="rsvp-form" class="rsvp-form" action="" method="POST">
+  <div class="modal-header">
+    <h4 class="modal-title" id="myModalLabel">
+RSVP
+</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+
+  <div class="modal-body form-horizontal text-center">
+    <div class="input-group">
+      <span class="input-group-text"><i class="fa fa-user"></i></span>
+      <input name="name1" class="guest-input form-control" placeholder="Your Name" required id="primary-name">
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-text"><i class="fa fa-user"></i></span>
+      <input name="name2" class="guest-input form-control" placeholder="Your Guest" id="primary-guest" autocomplete="new-password">
+    </div>
+
+    
+      <div class="collapse rsvp-help-collapse help-text" id="rsvp-warning-text">
+        <div>As much as we would love to have everyone, please only include guests that were listed on your invitation</div>
+      </div>
+    
+
+    <div class="collapse" id="guest-names-collapse">
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa fa-user"></i></span>
+        <input name="name3" class="guest-input form-control" placeholder="Your 2nd Guest" autocomplete="new-password">
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa fa-user"></i></span>
+        <input name="name4" class="guest-input form-control" placeholder="Your 3rd Guest" autocomplete="new-password">
+      </div>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-text"><i class="fa fa-phone"></i></span>
+      <input id="phone-input" type="tel" name="phone" class="form-control" placeholder="Your Phone Number" required>
+    </div>
+    <div class="collapse help-text" id="phone-help">
+      <div>We'll send you a text with the event details</div>
+    </div>
+
+    
+      <div class="input-group invite-code-group">
+        <span class="input-group-text"><i class="fa fa-key"></i></span>
+        <input type="text" name="invite_code" id="invite-code" class="form-control" placeholder="Invite Code" required autocomplete="new-password">
+        <span class="input-group-text"><i class="fa fa-info-circle rsvp-help-toggle" id="rsvp-help-toggle"></i></span>
+      </div>
+      <div class="collapse rsvp-help-collapse help-text" id="rsvp-code-help-text">
+        <div>You can put the code on the back of your RSVP card, or turn off this functionality all together. The code for this sample is 1234</div>
+      </div>
+    
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="rsvpRadio" id="rsvp-yes" value="yes" required>
+      <label class="form-check-label" for="rsvp-yes">I'll be there</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="rsvpRadio" id="rsvp-no" value="no" required>
+      <label class="form-check-label" for="rsvp-no">I can't make it</label>
+    </div>
+
+    
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa fa-music"></i></span>
+        <input type="text" name="song" class="form-control" placeholder="What songs will get you dancing?" autocomplete="new-password">
+      </div>
+    
+
+    
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+        <textarea class="form-control" name="message" rows="3" placeholder="Leave a message for the bride and groom." autocomplete="new-password"></textarea>
+      </div>
+    
+
+    <div class="alert-wrapper" id="alert-wrapper"></div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-bs-dismiss="modal">
+      Cancel
+    </button>
+    <button type="submit" class="btn btn-primary" value="Submit" name="submit">
+      RSVP
+    </button>
+  </div>
+</form>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="rsvp-no-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+  <div class="modal-header">
+    <h4 class="modal-title" id="myModalLabel">Thank You!</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <div class="section-padding">
+      <p>We really wish you could have made it, but we still love you. <span class="fa fa-heart"></span></p>
+      <p>You'll receive a text confirmation shortly.</p>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+    const myCalendar = createAddToCalendarButton({
+      // Event title
+      title: "Charlie&#39;s and Rowan&#39;s Wedding",
+
+      // Event start date
+      start: new Date(Number("1687107600") * 1000),
+
+      // Event duration (IN MINUTES)
+      // duration: 4 * 60,
+
+      // You can also choose to set an end time
+      // If an end time is set, this will take precedence over duration
+      end: new Date(Number("1617526740") * 1000),
+
+      // Event Address
+      address: ' Gustavus, AK ',
+
+      // Event Description
+      description: "We can't wait to see you on the day of the wedding. For any questions or issues, contact Nathan Orick. \n\nWebsite: http://localhost:4000"
+    },
+      'add-to-cal',
+    );
+  </script>
+    
+<div class="modal fade" id="rsvp-yes-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+  <div class="modal-header">
+    <h4 class="modal-title" id="myModalLabel">Thank You!</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <div class="section-padding">
+      <p>We're glad that you're hanging out with us on our wedding day!</p>
+      <p>You'll receive a text confirmation shortly.</p>
+      <div id="add-to-cal"></div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+        
+             <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-expand-lg fixed-top  top-nav-collapse "
+         role="navigation"
+         id="navbar"
+    >
+        <div class="container">
+              <a class="navbar-brand" href="/">
+                C
+                &
+                R
+              </a>
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="navbar-main-collapse">
+                <ul class="nav navbar-nav ms-auto">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    
+                      
+                        <li class=" nav-item">
+                            <a href="/#ourstory" class="nav-link">Home</a>
+                        </li>
+                      
+                    
+                      
+                        <li class=" nav-item">
+                            <a href="/itinerary" class="nav-link">Itinerary</a>
+                        </li>
+                      
+                    
+                      
+                        <li class=" nav-item">
+                            <a href="/details" class="nav-link">Details</a>
+                        </li>
+                      
+                    
+                      
+                        <li class=" nav-item">
+                            <a href="/faq" class="nav-link">FAQ</a>
+                        </li>
+                      
+                    
+                      
+                        <li class=" nav-item">
+                            <a href="/registry" class="nav-link">Registry</a>
+                        </li>
+                      
+                    
+                      
+                        <li class=" nav-item">
+                            <a href="/photo-gallery" class="nav-link">Photos</a>
+                        </li>
+                      
+                    
+                      
+                        <li class="modal-link nav-item">
+                          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#rsvp-modal">
+                            RSVP
+                            <!-- <i class="fa fa-exclamation-circle modal-link--icon"></i> -->
+                          </a>
+                        </li>
+                      
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+        
+
+        <div class="content-wrapper">
+            
+
+<header class="billboard billboard-header"
+        style="
+     background-position: center center;
+    background-image: url(/assets/img/sparklers.jpg)
+">
+  <h1 class="billboard-text">
+    Celebrations
+  </h1>
+</header>
+
+
+  
+  <section class="container content-section">
+    
+    <div class="row justify-content-start">
+    
+
+      <div class="col-lg-7 col-sm-8">
+        <h2>
+          Wedding Shower
+          <br>
+          <small class="text-muted wrap-whitespace date-subheader">
+            
+              Thursday, May 26, 2016 | 12:00 AM
+            
+          </small>
+        </h2>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <address class="col-xs-8 ">
+            
+            
+            <a href="https://www.google.com/maps/place/St+Michael+in+Old+Town/@41.912635,-87.6408956,15z/data=!4m2!3m1!1s0x0:0xe227f2c7eb743c04">
+              640 Pansy Hill Rd<br>
+              Harriman, TN 37748<br>
+            </a>
+            
+          </address>
+
+          <dl class="col-xs-4">
+            <dt>Attire</dt>
+            <dd>Casual</dd>
+          </dl>
+
+        </div>
+
+        <p>We have decided to not have a gender-specific wedding shower, but instead have an inclusive pre-wedding party for all guests and family members to celebrate our upcoming nuptials. Join us for our brunch shower to help us get our wedding season started! Parking will be plentiful at the restaurant. If you are interested in bringing a gift, our registries are linked on the site!</p>
+        
+        
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container content-section">
+    
+    <div class="row justify-content-end">
+    
+
+      <div class="col-lg-7 col-sm-8">
+        <h2>
+          Wedding Ceremony
+          <br>
+          <small class="text-muted wrap-whitespace date-subheader">
+            
+              Sunday, June 18, 2023 | 10:00 AM
+            
+          </small>
+        </h2>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <address class="col-xs-8 ">
+            
+            
+            <a href="https://www.google.com/maps/place/St+Michael+in+Old+Town/@41.912635,-87.6408956,15z/data=!4m2!3m1!1s0x0:0xe227f2c7eb743c04">
+              <br>
+              Gustavus, AK <br>
+            </a>
+            
+          </address>
+
+          <dl class="col-xs-4">
+            <dt>Attire</dt>
+            <dd>Snappy casual</dd>
+          </dl>
+
+        </div>
+
+        <p>Our wedding ceremony will be the perfect blend of our separate Catholic and Baptist traditions. Please arrive at least 10 minutes prior to the start of the ceremony in order to find your seat. There will be a parking attendant on site to direct you, and the venue will also provide transportation to the ceremony site if needed. We ask that you please ensure that your cell phones are off and out of sight for the duration of the ceremony.</p>
+        
+        
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container content-section">
+    
+    <div class="row justify-content-start">
+    
+
+      <div class="col-lg-7 col-sm-8">
+        <h2>
+          Reception
+          <br>
+          <small class="text-muted wrap-whitespace date-subheader">
+            
+              Immediately following the ceremony
+            
+          </small>
+        </h2>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <address class="col-xs-8 ">
+            
+            
+            <a href="https://www.google.com/maps/place/St+Michael+in+Old+Town/@41.912635,-87.6408956,15z/data=!4m2!3m1!1s0x0:0xe227f2c7eb743c04">
+              <br>
+              Gustavus, AK <br>
+            </a>
+            
+          </address>
+
+          <dl class="col-xs-4">
+            <dt>Attire</dt>
+            <dd>Snappy casual</dd>
+          </dl>
+
+        </div>
+
+        <p>The wedding reception is at the same venue as the ceremony and will commence directly after the ceremony ends. Venue staff will direct you to the reception space. Dinner will be provided and make sure to bring your dancing shoes!</p>
+        
+        
+
+        
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+        </div>
+
+        
+            <div class="footer-wrapper">
+                <footer class="site-footer">
+  <p>
+      Custom Wedding Sites, Crafted with 💙 by <a href="https://content.nathanorick.com/weddings/landing">Nathan and Sarah</a>
+  </p>
+</footer>
+            </div>
+        
+    </body>
+</html>
