@@ -1,0 +1,16 @@
+- name: Home
+  link: /charlie_rowan
+- name: Itinerary
+  link: /charlie_rowan/itinerary
+- name: Travel
+  link: /charlie_rowan/travel
+- name: Things to Do
+  link: /charlie_rowan/activities
+- name: FAQ
+  link: /charlie_rowan/faq
+- name: Registry
+  link: /charlie_rowan/registry
+- name: Photos
+  link: /charlie_rowan/photo-gallery
+- name: RSVP
+  exlink: https://docs.google.com/forms/d/e/1FAIpQLSeuENV558XziqRGe3kwu2skPmVktbH4sEZgMrd2qaDN_JEukQ/viewform?usp=sf_link

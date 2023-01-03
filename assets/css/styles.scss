@@ -1,0 +1,82 @@
+---
+---
+
+@use "sass:color";
+
+@function text-clr($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Theme Variables
+$text-color: {{site.data.settings.theme.text_color | default: "#404040"}};
+$text-color-lighter: scale-color({{site.data.settings.theme.text_color | default: "#404040"}}, $lightness: 70%);
+
+$primary-color: {{site.data.settings.theme.primary_color | default: "#fff"}};
+$primary-text-color: text-clr($primary-color);
+$primary-color-darker: scale-color({{site.data.settings.theme.primary_color | default: "#fff"}}, $lightness: -10%);
+$primary-text-color-darker: text-clr($primary-color-darker);
+$primary-color-darkest: scale-color({{site.data.settings.theme.primary_color | default: "#fff"}}, $lightness: -30%);
+$primary-text-color-darkest: text-clr($primary-color-darkest);
+
+$secondary-color: {{site.data.settings.theme.secondary_color | default: "#afa63d"}};
+$secondary-text-color: text-clr($secondary-color);
+$secondary-color-darker: scale-color({{site.data.settings.theme.secondary_color | default: "#fff"}}, $lightness: -10%);
+$secondary-text-color-darker: text-clr($secondary-color-darker);
+$secondary-color-darkest: scale-color({{site.data.settings.theme.secondary_color | default: "#fff"}}, $lightness: -30%);
+$secondary-text-color-darkest: text-clr($secondary-color-darkest);
+
+$accent-color: {{site.data.settings.theme.accent_color | default: "#219ab3"}};
+$accent-text-color: text-clr($accent-color);
+$accent-color-darker: scale-color({{site.data.settings.theme.accent_color | default: "#fff"}}, $lightness: -10%);
+$accent-text-color-darker: text-clr($accent-color-darker);
+$accent-color-darkest: scale-color({{site.data.settings.theme.accent_color | default: "#fff"}}, $lightness: -30%);
+$accent-text-color-darkest: text-clr($accent-color-darkest);
+
+$background-color: {{site.data.settings.theme.background_color | default: "#fff"}};
+$background-color-lighter: scale-color({{site.data.settings.theme.background_color | default: "#fff"}}, $lightness: 50%);
+
+:root {
+    --intro-background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%,
+             rgba(0,0,0,0.65) 100%),url({{site.data.settings.hero_image}}) no-repeat center center scroll;
+    
+    --intro-background-position: {{site.data.settings.hero_position | default: "center center"}};
+
+    @media (max-width: 767px) {
+        {% if site.data.settings.mobile_hero_image %}
+        --intro-background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%,
+                rgba(0,0,0,0.65) 100%),url({{site.data.settings.mobile_hero_image}}) no-repeat center center scroll;
+        --intro-background-position: {{site.data.settings.mobile_hero_position | default: "center center"}};
+        {% endif %}
+    }
+
+    --text-color: #{$text-color};
+    --text-color-lighter: #{$text-color-lighter};
+
+    --primary-color: #{$primary-color};
+    --primary-color-darker: #{$primary-color-darker};
+    --primary-color-darkest: #{$primary-color-darkest};
+    --primary-text-color: #{$primary-text-color};
+    --primary-text-color-darker: #{$primary-text-color-darker};
+    --primary-text-color-darkest: #{$primary-text-color-darkest};
+
+    --secondary-color: #{$secondary-color};
+    --secondary-color-darker: #{$secondary-color-darker};
+    --secondary-color-darkest: #{$secondary-color-darkest};
+    --secondary-text-color: #{$secondary-text-color};
+    --secondary-text-color-darker: #{$secondary-text-color-darker};
+    --secondary-text-color-darkest: #{$secondary-text-color-darkest};
+
+    --accent-color: #{$accent-color};
+    --accent-color-darker: #{$accent-color-darker};
+    --accent-color-darkest: #{$accent-color-darkest};
+    --accent-text-color: #{$accent-text-color};
+    --accent-text-color-darker: #{$accent-text-color-darker};
+    --accent-text-color-darkest: #{$accent-text-color-darkest};
+
+    --background-color: #{$background-color};
+    --background-color-lighter: #{$background-color-lighter};
+}
