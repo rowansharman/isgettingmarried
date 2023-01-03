@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body data-target=".navbar-fixed-top">
+        <!-- Javascript Imports -->
+        {% include js.html src="assets/js/ouical.min.js" %}
+        {% include js.html src="assets/main-bundle.js" %}
+        {% include js.html src="assets/js/globals.js" %}
+
+
+        {% if page.show_nav != false %}
+            {% include nav.html %}
+        {% endif %}
+
+        <div class="content-wrapper">
+            {{ content }}
+        </div>
+    </body>
+</html>
